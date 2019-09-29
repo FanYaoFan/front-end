@@ -5,7 +5,9 @@
  * 客户端 : 所有可以向服务器发生请求的
  * 服务端 : 所有可以接收客户端请求的,并且给其响应一些内容的
  * DNS   : 域名解析服务器  
-  ![图片]('./ajax1.png')  
+  <div align="center">
+  <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/ajax1.png" height="400" width="300">
+</div>
 ##### 1~4 为HTTP请求阶段  
  1. 浏览器根据 请求的url首先向DNS域名解析器发送请求 
  2. DNS反解析: 根据浏览器请求的域名,向DNS服务器找到对应的服务器ip地址
