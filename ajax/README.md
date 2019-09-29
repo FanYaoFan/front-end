@@ -46,8 +46,8 @@ ftp:文件传世协议:一般用来实现文件在服务器上的上传和下载
 起始行:请求起始行.响应起始行 
 首部:请求头 ,响应头,通用头
 主体:请求主体  .响应主体  
- <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/https1.png"  width="1400" >  
- <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/http2.png"  width="1400" >   
+ <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/https1.png" height = "400" >  
+ <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/http2.png" height = "400" >   
 #### 1.3.1 客户端与服务端交互方式  
 **客户端传递给服务器**
 1. 问号传参  
@@ -66,9 +66,10 @@ xhr.send ajax中传递的内容就是客户端设置的请求主体内容,服务
 *ajax* :  async JavaScript and xml  异步的js和xml是泛指局部刷新  
 在以前,服务器为了清晰的表达数据结构,都是返回XML格式的内容.(类似字符串拼接) 
 全局刷新 
-![global]()
+<img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/global.png"  width = "1200" >  
 不使用ajax,首先向服务器发送一个请求,服务器获取请求后,都要给用户一个提示(原页展示的内容可能发生变化)服务器把带提示的内容重新进行拼接,然后返回给客户端,客户端重新渲染最新的内容(只能页面整体刷新)  
 ajax的诞生就是为了实现局部刷新  
+<img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/ajax%E4%BA%A4%E4%BA%92.png"  width = "1200" >  
 ### 2.1 操作
 1. 创建ajax实例,ActiveXObject来实现的  
 `let xhr = new XMLHttpRequest()`
