@@ -103,3 +103,34 @@ get不安全,post相对安全;get会产生不可控制的缓存.post不会
 * 3 loading 响应的主体内容正在返回  
 * 4 done 响应主体内容已经被客户端接收
 
+## 3 HTTP状态码 
+1. 200 ok
+2. 301  Moved Permanently 永久转移(永久重定向) => 域名更改  
+3. 302  Move temporarily 临时转移(临时重定向 => 307)   
+一般用作服务器负载均衡,当一台服务器达到最大的并发数的时候,会把后续访问的用户历史转移到其他的服务器组上处理  
+4. 304 Not Modified 设置缓存   
+对于不经常更新的资源文件,eg(css/js/html/img),服务器会结合客户端设置304缓存,第一次加载过这些资源就会缓存到客户端了.下载再获取的时候,是从缓存中获取的;如果资源更新了,服务器会通过最后修改的时间强制让客户端从服务器重新拉取;  
+5. 400 Bad Request 请求参数错误
+6. 401 Unauthorized 无权限访问  
+7. 404 Not Found 找不到资源(地址不存在)
+8. 413 Request Entity Too Large 和服务器交互的内容资源超过服务器最大限制  
+9. 500 Interal Server Error 未知的服务器错误
+10. 503 Service Unavailable 服务器超负荷 
+## 4 ajax关于xhr的属性和方法  
+* xhr.statusText 状态码的描述
+* xhr.timeout 设置请求超时的时间  
+* xhr.withCredentials  是否允许跨域(false)
+* xhr.about() 强制中断ajax请求
+* xhr.getAllResponseHeaders() 获取所有响应头信息  
+* xhr.getResponseHeader('key') 获取key对应的响应头信息 eg xhr.getResponseHeader('data')就是在获取响应中的服务器时间  
+* xhr.open() 打开url请求 
+* xhr.overrideMinetype() 重写MIME类型
+* xhr.send() 发送ajax 请求 
+* xhr.setRequestHeader()设置请求头 
+## 5 同步异步
+js是单线程的,浏览器是多线程的,在浏览器中每打开一个页面都相当于开辟出一个进程.一个进程包含多个线程;js同一个时间只能干一件事  
+** 案例**  
+如图   
+
+
+ 
