@@ -1,4 +1,12 @@
 # ajax 
+# 目录 
+# [1 了解](#1-了解)  
+# [2 ajax](#2-ajax)  
+# [3 HTTP状态码](#3-http状态码)  
+# [4 xhr](#4-ajax关于xhr的属性和方法)     
+***
+___
+___
 
 ##  1 了解  
 ### 1.1 浏览器解析 
@@ -26,8 +34,7 @@
 一次完整的 请求 + 响应 称之为 "http事物"  
 一个页面完全加载完成,需要向服务器发起很多次http事物.   
 如果我们做了资源加载处理(304),而且即将加载的资源在之前已经加载过了.这样的操作和传统的HTTP事物有所不一样.他们是从服务器和浏览器的缓存中获取数据,比传统速度快  
-### 1.2
-#### url  
+### 1.2 url  
 URI(**统一资源标识符**) = URL(**统一资源占位符**) + URN(**统一资源名称**)  
 **http & https** 
 http:超文本传输协议  
@@ -129,8 +136,12 @@ get不安全,post相对安全;get会产生不可控制的缓存.post不会
 * xhr.setRequestHeader()设置请求头 
 ## 5 同步异步
 js是单线程的,浏览器是多线程的,在浏览器中每打开一个页面都相当于开辟出一个进程.一个进程包含多个线程;js同一个时间只能干一件事  
-** 案例**  
+<img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/ajaxi.png"  width = "1200" > 
+**案例**
 如图   
+<img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/async.png  height="400"> 
+<img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/absend.png height="400"> 
+<img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/afsend.png height="400"> 
 
-
+[回到顶部](#ajax)
  
