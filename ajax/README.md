@@ -4,7 +4,7 @@
 # [2 ajax](#2-ajax)  
 # [3 HTTP状态码](#3-http状态码)  
 # [4 xhr](#4-ajax关于xhr的属性和方法)  
-# [5 同步异步](#5-同步异步)     
+# [5 案例](#5-案例)     
 ***
 ___
 ___
@@ -138,7 +138,7 @@ get不安全,post相对安全;get会产生不可控制的缓存.post不会
 ## 5 同步异步
 js是单线程的,浏览器是多线程的,在浏览器中每打开一个页面都相当于开辟出一个进程.一个进程包含多个线程;js同一个时间只能干一件事  
 <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/ajaxi.png"  width = "1200" > 
-** 案例**  
+#  案例
 如图   
 <img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/async.png  height="400"> 
 <img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/absend.png height="400"> 
