@@ -6,7 +6,7 @@
  * 服务端 : 所有可以接收客户端请求的,并且给其响应一些内容的
  * DNS   : 域名解析服务器  
   <div align="center">
-  <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/ajax1.png" height="400" width="300">
+  <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/ajax1.png" height="1790" width="598">
 </div>
 ##### 1~4 为HTTP请求阶段  
  1. 浏览器根据 请求的url首先向DNS域名解析器发送请求 
