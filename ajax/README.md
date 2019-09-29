@@ -4,8 +4,10 @@
 # [2 ajax](#2-ajax)  
 # [3 HTTP状态码](#3-http状态码)  
 # [4 xhr](#4-ajax关于xhr的属性和方法)  
-# [5 同步异步](#5-同步异步)  
+# [5 同步异步](#5-同步异步)     
 ***
+___
+___
 
 ##  1 了解  
 ### 1.1 浏览器解析 
@@ -142,5 +144,5 @@ js是单线程的,浏览器是多线程的,在浏览器中每打开一个页面�
 <img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/absend.png height="400"> 
 <img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/afsend.png height="400"> 
 
-
+[回到顶部](#ajax)
  
