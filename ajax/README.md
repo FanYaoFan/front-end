@@ -46,7 +46,8 @@ ftp:文件传世协议:一般用来实现文件在服务器上的上传和下载
 起始行:请求起始行.响应起始行 
 首部:请求头 ,响应头,通用头
 主体:请求主体  .响应主体  
-图片 ![](http1.png) + http2.png  
+ <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/https1.png"  width="1400" >  
+ <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/http2.png"  width="1400" >   
 #### 1.3.1 客户端与服务端交互方式  
 **客户端传递给服务器**
 1. 问号传参  
