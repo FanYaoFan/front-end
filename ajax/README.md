@@ -58,11 +58,43 @@ xhr.send ajax中传递的内容就是客户端设置的请求主体内容,服务
 2. 设置响应主体 
 主要的返回信息都在响应主体中  
 ## 2. ajax 
-### 背景  
+### 2.1 背景  
 *ajax* :  async JavaScript and xml  异步的js和xml是泛指局部刷新  
 在以前,服务器为了清晰的表达数据结构,都是返回XML格式的内容.(类似字符串拼接) 
 全局刷新 
 ![global]()
 不使用ajax,首先向服务器发送一个请求,服务器获取请求后,都要给用户一个提示(原页展示的内容可能发生变化)服务器把带提示的内容重新进行拼接,然后返回给客户端,客户端重新渲染最新的内容(只能页面整体刷新)  
-ajax的诞生就是为了实现局部刷新
-   
+ajax的诞生就是为了实现局部刷新  
+### 2.1 操作
+1. 创建ajax实例,ActiveXObject来实现的  
+`let xhr = new XMLHttpRequest()`
+2. 请求行  
+`xhr.open('get', 'xxx.php, true/false)` true => 异步 false 同步
+3. 事件监听  
+一般监听的都是ready-state-change事件(ajax状态改变事件)基于这个事件可以获取服务器返回的响应头响应主体内容  
+`xhr.onreadystatechange = () => {  } `  
+eg        
+    xhr.onreadystatechange = () => { 
+    	if(xhr.readystate === 4  && xhr.status === 200 ){
+    	xhr.responseText}}
+4. 发送ajax请求  
+`xhr.send()`  
+### 2.2 请求方式
+所有的请求都可以向服务器端传递内容,也都可以从服务器获取内容  
+**GET**  
+**POST**  
+get是基于url地址"问号传参", 
+xhr.open('GET', '/user/id?=xxx&ame=xxx')  
+post是基于'请求主体'方式把信息传递给服务器 
+xhr.send('xxx=xxx&xxx=xxx')请求主体中,xhr.send( JSON.stringify({id:1000,lx:333}))传递给服务器的是json格式的字符串,但你真实项目中常用url-encode格式的字符串  
+区别  
+get一般从服务器获取数据,eg轮播图,页面图片等.而post的是给服务器,注册登录.  
+如果post是基于问号传参的方式会出现一些问题:url会拼接很长,浏览器对于url的最大的长度有最大限制(谷歌8kb,火狐7kb,ie2kb) ,超过的部分浏览器会截掉.  = > 所以get请求可以基于url传参,而post是基于请求主体传递(.真实项目中我们会设置大小限制,防止上传过大信息导致请求迟迟完不成)  
+get不安全,post相对安全;get会产生不可控制的缓存.post不会 
+### 2.3 ajax状态  
+* 0 unsent 刚开始创建xhr,还没有发送
+* 1 opened 已经执行了open这个操作  
+* 2 headers received 已经发送了ajax请求(ajax任务开始),响应头信息已经被客户端接收(响应头中包含了: 服务器的时间,和返回的http状态码) 
+* 3 loading 响应的主体内容正在返回  
+* 4 done 响应主体内容已经被客户端接收
+
