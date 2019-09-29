@@ -132,9 +132,9 @@ js是单线程的,浏览器是多线程的,在浏览器中每打开一个页面�
 <img src="https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/ajaxi.png"  width = "1200" > 
 ** 案例**  
 如图   
-<img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/async.png > 
-<img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/absed.png > 
-<img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/afsend.png > 
+<img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/async.png  height="400"> 
+<img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/absend.png height="400"> 
+<img src=https://github.com/FanYaoFan/front-end/blob/master/ajax/ajax/afsend.png height="400"> 
 
 
  
