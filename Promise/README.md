@@ -20,7 +20,7 @@ Promise并不是完全的异步操作,new Promise 是一个同步操作,而rsolv
 <img src="https://github.com/FanYaoFan/front-end/blob/master/Promise/img/async.png"></img>
 `new Promise( (resolve,reject) => { console.log(2) resolve()} ).then().catch()`  
 Promise(async/await) 当在excutor中执行resolve和reject的时候是异步操作.会先执行then/catch,当主栈完成后,才会再去调用resolve/reject,把存放的方法执行 
-__问题__:async/await 是否把异步操作同步化? 图例说明 
+#### 问题:async/await 是否把异步操作同步化? 图例说明 
 <img src="https://github.com/FanYaoFan/front-end/blob/master/Promise/img/async3.png"></img>
 ### 经典案例   
 <img src="https://github.com/FanYaoFan/front-end/blob/master/Promise/img/eg1.png" heighr="400"></img>
