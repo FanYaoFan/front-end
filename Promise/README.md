@@ -13,7 +13,7 @@ process.nextTick,Promise(async/await)
 sync > micro(微) > macro(宏)
 ### 1.1.3 深入了解异步  
 JS解析中,会把主任务队列的事情完成,把异步的放在等待队列.等主任务队列完成空闲后,再把等待任务队列的事情拿到主任务队列来执行.(注意的是,当主任务队列还在执行,而等待任务队列事件时间已经到,当主任务队列一完成,会先执行这个时间到的异步再执行这个主任务之后的等待任务)如图: 
-<img src="https://github.com/FanYaoFan/front-end/blob/master/Promise/img/Jsasync2.png"></img>
+<img src="https://github.com/FanYaoFan/front-end/blob/master/Promise/img/jsasync2.png"></img>
 <img src="https://github.com/FanYaoFan/front-end/blob/master/Promise/img/Jsasync1.png"></img>
 ## Promise 
 Promise并不是完全的异步操作,new Promise 是一个同步操作,而rsolve() 和 reject()是异步的.  
