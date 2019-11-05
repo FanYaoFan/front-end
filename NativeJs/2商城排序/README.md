@@ -88,9 +88,10 @@ productRender.init()
  ```
  ## 4.2 排序方法 
  有两种, 一种是声明一个数组ary来接收自定义属性  
+ ### 4.2.1 第一种 
  ```JavaScript
  let ary = ['data-time', 'data-price', 'data-hot'];
-### 4.2.1第一种  
+ 
  let sortList = function () {
         [].forEach.call(headerList, (linka, index) => {
             //循环三次,执行三次这个方法,每一次执行都会形成一个闭包,
