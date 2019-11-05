@@ -1,0 +1,54 @@
+
+.headerBox{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.headerBox span {
+    flex: 1;
+    font-weight: bold;
+}
+.headerBox a {
+    flex: 1;
+    padding-left:.2rem;
+} 
+.headerBox a:hover{
+    color: red;
+}
+/* 列表  */ 
+.productBox {
+    background-color: #FFF;
+    margin-top:20px ;
+    /* text-align: center; */
+}
+.Probody{
+    display:flex;
+    justify-content: space-between;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    border-bottom: 2px solid #ccc;
+}
+.Pro-imgBox{
+     flex: 1;
+     width: 4rem;
+}
+.productBox img {
+    width : 100%;
+}
+.Pro-text{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.productBox p {
+     flex: 1;
+
+}
+.productBox span {
+    flex: 1;
+    /* margin-top: 1.3rem;
+    padding-top: .2rem; */
+}
